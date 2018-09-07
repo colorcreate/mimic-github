@@ -1,0 +1,1220 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body .d-flex {
+  display: flex !important;
+}
+body .octicon {
+  fill: currentColor;
+}
+body .dropdown-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  content: "";
+  border: 4px solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  margin: -2px 0 0 2px;
+}
+body .dropdown-divider {
+  height: 1px;
+  margin: 8px 1px;
+  background-color: #e1e4e8;
+}
+body .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 18px;
+  z-index: 100;
+  width: 160px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 2px;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+}
+body .dropdown-menu:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: -15px;
+  right: 10px;
+  left: auto;
+  border: 8px solid transparent;
+  border-bottom-color: rgba(27, 31, 35, 0.15);
+}
+body .dropdown-menu:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  top: -15px;
+  right: 10px;
+  left: auto;
+}
+body .Header {
+  z-index: 32;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #24292e;
+}
+body .Header-content {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+  flex: 1 1 auto;
+}
+body .Header-content .header-logo {
+  color: white;
+  margin-right: 15px;
+}
+body .Header-content .header-logo .octicon {
+  fill: currentColor;
+}
+body .Header-content .header-menu {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+}
+body .Header-content .header-menu .header-search-wrapper {
+  height: 30px;
+  font-size: inherit;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.125);
+  border: 0;
+  box-shadow: none;
+  border-radius: 3px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+body .Header-content .header-menu .header-search-wrapper input.header-search-input {
+  display: table-cell;
+  width: 100%;
+  min-height: 26px;
+  padding: 0 10px;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+body .Header-content .header-menu .header-search-wrapper input.header-search-input:focus {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+body .Header-content .header-menu .header-search-wrapper img {
+  margin-right: 8px;
+}
+body .Header-content .header-menu .header-search-wrapper.active {
+  background-color: white;
+}
+body .Header-content .header-menu .header-search-wrapper.active img {
+  display: none;
+}
+body .Header-content .header-menu ul.header-nav {
+  list-style: none;
+  padding-left: 8px;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .Header-content .header-menu ul.header-nav li {
+  display: block;
+  color: #fff;
+  padding: 0 8px;
+  cursor: pointer;
+}
+body .Header-content .header-menu ul.header-nav li:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+body .Header-content .header-menu ul.header-user-link {
+  list-style: none;
+  padding-left: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown {
+  display: block;
+  color: #fff;
+  padding: 0 8px;
+  cursor: pointer;
+  position: relative;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown .dropdown-header .avatar {
+  border-radius: 3px;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown .dropdown-menu ul {
+  color: black;
+  margin: 0;
+  list-style: none;
+  padding-left: 0px;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown .dropdown-menu ul li.menuitem {
+  padding: 4px 10px 4px 15px;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown .dropdown-menu ul li.menuitem:hover:not(.user) {
+  color: #fff;
+  background-color: #0366d6;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown .dropdown-menu ul li.dropdown-divider {
+  height: 1px;
+  margin: 8px 1px;
+  background-color: #e1e4e8;
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+body .Header-content .header-menu ul.header-user-link li.dropdown.active .dropdown-menu {
+  display: block;
+}
+body .main .main-wrapper {
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+body .main .main-wrapper .main-profile {
+  width: 25%;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper {
+  width: 87%;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard {
+  position: fixed;
+  top: 0;
+  width: 233px;
+  word-break: break-all;
+  pointer-events: none;
+  transition: 0.2s;
+  z-index: 110;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  opacity: 0;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard .user-profile-mini-avatar {
+  width: 32px;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard .user-profile-mini-name {
+  margin-left: 10px;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard:after {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+  height: 55px;
+  content: "";
+  background-color: #fff;
+  border-bottom: solid 1px #d1d5da;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  opacity: 0;
+  transition: 0.2s;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard.isStick {
+  opacity: 1;
+}
+body .main .main-wrapper .main-profile .main-profile-wrapper .user-profile-mini-vcard.isStick:after {
+  display: block;
+  opacity: 1;
+}
+body .main .main-wrapper .main-profile .profile-card {
+  padding: 15px 0;
+}
+body .main .main-wrapper .main-profile .profile-card .card-name {
+  font-size: 26px;
+  line-height: 30px;
+}
+body .main .main-wrapper .main-profile .profile-card .card-user {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 24px;
+  color: #666;
+}
+body .main .main-wrapper .main-profile .profile-bio {
+  margin-bottom: 20px;
+}
+body .main .main-wrapper .main-profile .profile-bio button.profile-bio-btn {
+  width: 100%;
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+}
+body .main .main-wrapper .main-profile .profile-bio button.profile-bio-btn:hover {
+  background-color: #e6ebf1;
+  background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+  background-position: -0.5em;
+  border-color: rgba(27, 31, 35, 0.35);
+}
+body .main .main-wrapper .main-profile .profile-bio button.profile-bio-btn:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-profile ul.profile-detail {
+  list-style: none;
+  padding: 15px;
+  border-top: 1px #e1e4e8 solid;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+body .main .main-wrapper .main-profile ul.profile-detail li {
+  display: flex;
+  align-items: center;
+}
+body .main .main-wrapper .main-profile ul.profile-detail li .octicon {
+  color: #6a737d;
+  margin: 0 8px 0 -8px;
+}
+body .main .main-wrapper .main-tab {
+  width: 70%;
+  padding-left: 8px;
+}
+body .main .main-wrapper .main-tab .UnderlineNav-body {
+  display: flex;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border-bottom: solid 1px #d1d5da;
+}
+body .main .main-wrapper .main-tab .UnderlineNav-body .UnderlineNav-item {
+  padding: 16px 8px;
+  margin-right: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #586069;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .UnderlineNav-body .UnderlineNav-item.selected {
+  font-weight: 600;
+  color: #24292e;
+  border-bottom-color: #e36209;
+}
+body .main .main-wrapper .main-tab .UnderlineNav-body .UnderlineNav-item .Counter {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: #586069;
+  background-color: rgba(27, 31, 35, 0.08);
+  border-radius: 20px;
+}
+body .main .main-wrapper .main-tab .main-tab-content {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item {
+  margin-top: 24px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail {
+  position: relative;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail summary.btn-link {
+  font-size: 13px;
+  font-weight: 400;
+  float: right;
+  color: #586069;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail summary.btn-link:hover {
+  color: #0366d6;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu {
+  width: 330px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu .detail-menu-dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu .detail-menu-dropdown li.menuitem {
+  display: block;
+  padding: 4px 10px 4px 15px;
+  overflow: hidden;
+  color: #24292e;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu .detail-menu-dropdown li.menuitem .detail-header .beta {
+  border: 1px solid #34d058;
+  border-radius: 3px;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: 400;
+  padding: 0 4px;
+  margin-left: 8px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu .detail-menu-dropdown li.menuitem .detail-content {
+  font-size: 12px;
+  margin-top: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail .dropdown-menu .detail-menu-dropdown li.menuitem:hover {
+  background-color: #0366d6;
+  color: white;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-detail.active .dropdown-menu {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-header {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item {
+  width: 44.5%;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  border: 1px #e1e4e8 solid;
+  display: flex;
+  flex-direction: column;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repository {
+  display: flex;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repository .pinned-repository-handle {
+  cursor: grab;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repository .pinned-repository-name {
+  color: #0366d6;
+  font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repository .pinned-repository-name:hover {
+  text-decoration: underline;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repo-desc {
+  color: #586069;
+  font-size: 12px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  flex: 1 0 auto;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repo-lan {
+  color: #586069;
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content ol.pinned-repos-list .pinned-repo-item .pinned-repo-lan .repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview {
+  padding: 8px 0;
+  border: 1px #e1e4e8 solid;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .calendar-graph {
+  padding: 5px 0 0;
+  text-align: center;
+  height: 100%;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .calendar-graph text.month {
+  font-size: 10px;
+  fill: #767676;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .calendar-graph text.wday {
+  font-size: 9px;
+  fill: #767676;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .contrib-footer {
+  padding: 0 10px 12px;
+  font-size: 11px;
+  margin: 4px 16px 0 16px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .contrib-footer .contrib-link {
+  float: left;
+  padding: 0 10px 12px;
+  font-size: 11px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .contrib-footer .contrib-legend {
+  float: right;
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .contrib-footer .contrib-legend .legend {
+  position: relative;
+  bottom: -1px;
+  display: inline-block;
+  margin: 0 5px;
+  list-style: none;
+  padding: 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .activity-overview .contrib-footer .contrib-legend .legend li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing {
+  position: relative;
+  padding-bottom: 24px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 13px;
+  z-index: -1;
+  display: block;
+  width: 2px;
+  content: "";
+  background-color: #e6ebf1;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-timeline-month-heading {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 8px 4px 0;
+  background-color: #fff;
+  width: fit-content;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-timeline-month-heading span.text-gray {
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-timeline-month-heading:after {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #eaecef;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .text-center {
+  text-align: center;
+  padding-top: 16px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper {
+  padding: 24px 0px 24px 24px;
+  margin-left: 16px;
+  position: relative;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper .discussion-item-icon {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin-top: -11px;
+  margin-left: -45px;
+  line-height: 35px;
+  color: #586069;
+  text-align: center;
+  background-color: #e6ebf1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper button.discution-item-header {
+  display: inline-block;
+  padding: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  color: #586069;
+  width: 100%;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper button.discution-item-header .d-inline-block {
+  float: right;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper button.discution-item-header:hover {
+  color: #0366d6;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper button.discution-item-header:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository {
+  margin-top: 4px;
+  padding: 4px 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository .css-truncate {
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository .css-truncate .profile-rollup-icon {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository .lan {
+  font-size: 12px;
+  color: #586069;
+  margin-left: 5px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository .lan .repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper ul.profile-rollup-content .contribution-created-repository time {
+  float: right;
+  color: #6a737d;
+  font-size: 12px;
+  padding-top: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper .profile-rollup-toggle-closed {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper .profile-rollup-toggle-opent {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper + .profile-rollup-wrapper {
+  border-top: 1px solid #eaecef;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper.open ul.profile-rollup-content {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper.open .profile-rollup-toggle-closed {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content .contribution-activity-listing .profile-rollup-wrapper.open .profile-rollup-toggle-opent {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content button.btn-show-more {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  color: #0366d6;
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content button.btn-show-more:hover {
+  background-color: #f6f8fa;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .item-content button.btn-show-more:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .tab-content-right {
+  padding-left: 32px;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .tab-content-right ul.filter-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .tab-content-right ul.filter-list li {
+  margin: 0 0 2px;
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  position: relative;
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .tab-content-right ul.filter-list li:hover {
+  background-color: #eaecef;
+}
+body .main .main-wrapper .main-tab .main-tab-content .tab-content-item .tab-content-right ul.filter-list li.selected {
+  color: #fff;
+  background-color: #0366d6;
+}
+body .main .main-wrapper .main-tab .main-tab-content.selected {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px #e1e4e8 solid;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-input,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-input {
+  min-height: 20px;
+  padding: 6px 8px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+  width: 50%;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-input:focus,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-input:focus {
+  border-color: #2188ff;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075), 0 0 0 0.2em rgba(3, 102, 214, 0.3);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu {
+  position: relative;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn i,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn i {
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.75;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn:active,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn:active,
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn.selected,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn.selected {
+  background-color: #e9ecef;
+  background-image: none;
+  border-color: rgba(27, 31, 35, 0.35);
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn:focus,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu button.select-btn:after,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu button.select-btn:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: -2px;
+  content: "";
+  border: 4px solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr {
+  position: absolute;
+  z-index: 30;
+  right: 0;
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal {
+  position: relative;
+  width: 300px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #586069;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header {
+  padding: 8px 10px;
+  line-height: 16px;
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header svg,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header svg {
+  display: block;
+  float: right;
+  color: #c6cbd1;
+  cursor: pointer;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header svg:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-header svg:hover {
+  color: #444d56;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item {
+  display: block;
+  padding: 8px 8px 8px 30px;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid #eaecef;
+  text-align: left;
+  background-color: #fff;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  width: 100%;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item .select-menu-item-icon,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item .select-menu-item-icon {
+  float: left;
+  margin-left: -20px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:hover {
+  color: #fff;
+  background-color: #0266D6;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:focus,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item .select-menu-item-icon,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item .select-menu-item-icon {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item.selected .select-menu-item-icon,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item.selected .select-menu-item-icon {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:last-child,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu .select-menu-modal-holderr .select-menu-modal .select-menu-list .select-menu-item:last-child {
+  border-bottom: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .select-menu.selected .select-menu-modal-holderr,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .select-menu.selected .select-menu-modal-holderr {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-new,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-new {
+  color: #fff;
+  background-color: #28a745;
+  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  -webkit-appearance: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-new span,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-new span {
+  margin-left: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-new:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-new:hover {
+  background-color: #269f42;
+  background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
+  background-position: -0.5em;
+  border-color: rgba(27, 31, 35, 0.5);
+  text-decoration: none;
+  background-repeat: repeat-x;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-new:active,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-new:active {
+  background-color: #279f43;
+  background-image: none;
+  border-color: rgba(27, 31, 35, 0.5);
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .repo-search .repo-new:focus,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .repo-search .repo-new:focus {
+  box-shadow: 0 0 0 0.2em rgba(52, 208, 88, 0.4);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .blankslate,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .blankslate {
+  position: relative;
+  padding: 32px;
+  text-align: center;
+  background-color: #fafbfc;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  box-shadow: inset 0 0 10px rgba(27, 31, 35, 0.05);
+  margin-top: 32px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .blankslate .blankslate-icon,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .blankslate .blankslate-icon {
+  margin-right: 4px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  color: #a3aab1;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] .blankslate h4,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] .blankslate h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="repositories"] ::placeholder,
+body .main .main-wrapper .main-tab .main-tab-content[tab="stars"] ::placeholder {
+  color: #d1d5da;
+  font-size: 14px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"],
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] {
+  position: relative;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #e1e4e8 solid;
+  padding: 24px 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-profile,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-profile {
+  margin-right: 12px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-profile img,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-profile img {
+  border-radius: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail {
+  width: 80%;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .name,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .name {
+  color: #24292e;
+  font-size: 16px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .user,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .user {
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .name,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .name,
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .user,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .user {
+  margin-right: 5px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .name:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .name:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a .user:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a .user:hover {
+  color: #0366d6;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail a:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail a:hover {
+  text-decoration: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail .detail-content,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail .detail-content {
+  font-size: 12px;
+  margin: 8px 0;
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-detail .detail-footer,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-detail .detail-footer {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #586069;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button .follow,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button .follow {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button .unfollow,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button .unfollow {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button.on .follow,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button.on .follow {
+  display: block;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button.on .unfollow,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button.on .unfollow {
+  display: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button button,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button button {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  -webkit-appearance: none;
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+  padding: 3px 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button button:active,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button button:active {
+  background-color: #e9ecef;
+  background-image: none;
+  border-color: rgba(27, 31, 35, 0.35);
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button button:hover,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button button:hover {
+  background-color: #e6ebf1;
+  background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+  background-position: -0.5em;
+  border-color: rgba(27, 31, 35, 0.35);
+}
+body .main .main-wrapper .main-tab .main-tab-content[tab="followers"] .follow-item .follow-button button:focus,
+body .main .main-wrapper .main-tab .main-tab-content[tab="following"] .follow-item .follow-button button:focus {
+  outline: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item {
+  padding: 24px 0;
+  border-bottom: 1px #e1e4e8 solid;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-header span {
+  font-size: 12px;
+  color: #586069;
+  margin-bottom: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-des {
+  color: #586069;
+  margin-top: 8px;
+  font-size: 14px;
+  padding-right: 24px;
+  margin-bottom: 8px;
+  width: 100%;
+  position: relative;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-des p {
+  margin-top: 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-des span.repo-graph {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail {
+  color: #586069;
+  margin-top: 8px;
+  font-size: 12px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail span {
+  margin-right: 15px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail .programmingLanguage {
+  font-size: 14px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail .repo-language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail svg {
+  margin-right: 2px;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail a {
+  margin-right: 15px;
+  color: inherit;
+}
+body .main .main-wrapper .main-tab .main-tab-content ul.repo-filter li.repo-filter-item .repo-detail a:hover {
+  text-decoration: none;
+  color: #0366d6;
+}
+.footer {
+  padding: 20px;
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer .footer-wrapper {
+  padding: 40px 0;
+  border-top: 1px #e1e4e8 solid;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.footer .footer-wrapper .footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.footer .footer-wrapper .footer-list li.footeritem {
+  font-size: 12px;
+  margin: 0 8px;
+}
+.footer .footer-wrapper .footer-list li.footeritem:not(.nonestyle) {
+  cursor: pointer;
+  color: #0366d6;
+}
+.footer .footer-wrapper .footer-list li.footeritem:not(.nonestyle):hover {
+  text-decoration: underline;
+}
+.footer .footer-wrapper .footer-octicon {
+  color: #c6cbd1;
+}
+.svg-tip {
+  position: absolute;
+  z-index: 99999;
+  padding: 10px;
+  font-size: 12px;
+  color: #959da5;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.svg-tip strong {
+  color: #dfe2e5;
+}
+.svg-tip:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  box-sizing: border-box;
+  margin: 0 0 0 -5px;
+  content: " ";
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 1072px) {
+  .Header .header-search-input {
+    font-size: 16px;
+  }
+  .main-wrapper {
+    width: 1072px;
+  }
+  .footer .footer-wrapper {
+    width: 1072px;
+  }
+}
