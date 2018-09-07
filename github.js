@@ -6,7 +6,9 @@ var user = $('.user-profile-mini-vcard')
 var bio = $('.profile-bio')
 var userBottom = bio[0].offsetTop
 function getQuery(){
-    var query = new Object()
+    var query = {
+        tab: 'overview'
+    }
     var search = window.location.search.substring(1).split('&')
     search.forEach(function(item){
         var x = item.split('=')
@@ -25,7 +27,7 @@ function setQuery(queries){
 }
 function initTab(){
     var query = getQuery()
-    var tab = query.tab
+    var tab = query.tab || ""
     var name = tab.charAt(0).toUpperCase() + tab.slice(1)
     var $tab = $('.UnderlineNav-item[title="'+ name +'"]')
     $tab.addClass('selected')
